@@ -86,7 +86,9 @@ public:
 };
 
 Animal::Animal() {
-	
+	this->objElefante = Elefante();
+	this->objPato = Pato();
+	this->objLeon = Leon();
 }
 
 Animal::~Animal() {}
