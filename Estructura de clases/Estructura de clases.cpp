@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Elefante {
+class Elefante { // Clase "Elefante"
 public:
 	Elefante();
 	~Elefante();
@@ -28,7 +28,7 @@ void Elefante::imprime() {
 }
 
 
-class Pato {
+class Pato { // Clase "Pato"
 public:
 	Pato();
 	~Pato();
@@ -51,7 +51,7 @@ void Pato::imprime() {
 }
 
 
-class Leon {
+class Leon { // Clase "Leon"
 public:
 	Leon();
 	~Leon();
@@ -73,7 +73,8 @@ void Leon::imprime() {
 	cout << "Objeto Leon." << endl;
 }
 
-class Animal {
+
+class Animal { // Clase "Animal"
 private:
 	Elefante objElefante;
 	Pato objPato;
@@ -107,7 +108,7 @@ void Animal::imprime() {
 
 
 int main(void) {
-	Animal objAnimal = Animal();
+	Animal objAnimal = Animal(); // Instancia de la Clase "Animal"
 
 	objAnimal.dibuja();
 	objAnimal.imprime();
