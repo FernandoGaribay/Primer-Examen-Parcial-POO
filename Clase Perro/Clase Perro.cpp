@@ -19,7 +19,7 @@ Perro::Perro() {}
 Perro::~Perro() {}
 
 void Perro::ladrar() {
-	cout << nombre <<": Guau Guau!" << endl;
+	cout << getNombre() <<": Guau Guau!" << endl;
 }
 
 void Perro::setNombre(char const* nombre_) { // Desarrollo de la funcion Set
