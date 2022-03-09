@@ -3,20 +3,18 @@
 
 using namespace std;
 
-class Perro {
+class Perro { // Clase "Perro"
 private:
 	char const* nombre;
 public:
-	Perro();
-	~Perro();
+	Perro(); // Constructor por defecto
+	~Perro(); // Destructor
 	void ladrar();
-	void setNombre(char const*);
-	char const* getNombre();
+	void setNombre(char const*); // Set del atributo "nombre"
+	char const* getNombre(); // Get del atributo "nombre"
 };
 
-Perro::Perro() {
-
-}
+Perro::Perro() {}
 
 Perro::~Perro() {}
 
@@ -24,21 +22,21 @@ void Perro::ladrar() {
 	cout << nombre <<": Guau Guau!" << endl;
 }
 
-void Perro::setNombre(char const* nombre_) {
+void Perro::setNombre(char const* nombre_) { // Desarrollo de la funcion Set
 	nombre = nombre_;
 }
 
-char const* Perro::getNombre() {
+char const* Perro::getNombre() { // Desarrollo de la funcion Get
 	return nombre;
 }
 
 
 int main()
 {
-	Perro manchas = Perro();
+	Perro objPerro = Perro(); // Instancia de la clase "Perro"
 
-	manchas.setNombre("Manchas");
-	manchas.ladrar();
+	objPerro.setNombre("Manchas");
+	objPerro.ladrar();
 
 	return 0;
 }
